@@ -22,7 +22,9 @@ The main goal behind this project is to understand code architecture in Getx.
            - repository
            - view
            - widgets
-        
+  - main
+      - env
+      - app
   - routes
   - services
   - utils
