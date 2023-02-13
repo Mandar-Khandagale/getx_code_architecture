@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getx_code_architecture/base/base_page.dart';
 import 'package:getx_code_architecture/utils/app_png.dart';
 import 'package:getx_code_architecture/utils/asset_utils.dart';
-import 'package:getx_code_architecture/utils/size_config.dart';
+
 
 class SplashPageView extends BasePageViewWidget {
   const SplashPageView({Key? key}) : super(key: key);
@@ -11,9 +11,9 @@ class SplashPageView extends BasePageViewWidget {
   Widget build(BuildContext context) {
     return Center(
       child: AppPng.asset(
-        AssetUtils.splashImg,
-        height: SizeConfig.safeBlockHorizontal * 70,
-        width: SizeConfig.safeBlockHorizontal * 70,
+        AssetUtils.splashBg,
+        height: double.infinity,
+        width: double.infinity,
       ),
     );
   }
