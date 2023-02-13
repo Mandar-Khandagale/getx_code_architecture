@@ -5,5 +5,6 @@ class Routes {
 
   static const splashPage = '/splashPage';
   static const loginPage = '/loginPage';
+  static const landingPage = '/landingPage';
 
 }

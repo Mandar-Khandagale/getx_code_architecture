@@ -5,6 +5,7 @@ class AppConstant {
 
   /*.......................Login Page Titles.....................*/
   static const String loginPage = "Login Page";
+  static const String landingPage = "Landing Page";
   static const String ok = "Ok";
 
 /*.......................Api Request & Response Keys .....................*/

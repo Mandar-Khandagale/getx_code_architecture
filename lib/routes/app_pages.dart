@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:getx_code_architecture/feature/landing/view/landing_screen_view.dart';
 import 'package:getx_code_architecture/feature/login/view/login_screen.dart';
 import 'package:getx_code_architecture/feature/splash/view/splash_screen.dart';
 
@@ -15,6 +16,10 @@ class AppPages {
     GetPage(
       name: Routes.loginPage,
       page: () => const LoginPage(),
+    ),
+    GetPage(
+      name: Routes.landingPage,
+      page: () => LandingScreen(),
     ),
   ];
 }

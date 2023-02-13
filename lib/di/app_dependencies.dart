@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
 import 'package:getx_code_architecture/data/network/api_service.dart';
+import 'package:getx_code_architecture/feature/landing/controller/landing_controller.dart';
 import 'package:getx_code_architecture/feature/login/controller/login_controller.dart';
 import 'package:getx_code_architecture/feature/login/repository/login_repository.dart';
 import 'package:getx_code_architecture/routes/app_routes.dart';
@@ -48,10 +49,17 @@ class AppDependencies {
     /// login repository
     LoginRepository? loginRepository = getFind(value: LoginRepository());
 
+    /// login controller
     Get.lazyPut<LoginController?>(() {
       return LoginController(
         loginRepository: loginRepository,
       );
+    }, fenix: true);
+
+
+    /// landing controller
+    Get.lazyPut<LandingController?>(() {
+      return LandingController();
     }, fenix: true);
 
   }

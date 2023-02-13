@@ -49,6 +49,9 @@ class LoginController extends GetxController {
             //change(response, status: RxStatus.success());
             userName(response.userName);
             isLoader(false);
+            Future.delayed(const Duration(seconds: 2), () {
+              AppRoutes.getInstance().getOffName(routes: Routes.landingPage);
+            });
           },
         );
       },

@@ -5,12 +5,12 @@ class AppRoutes {
     return Get.find<AppRoutes>();
   }
 
-  getToName({required String routes, dynamic arguments}) {
-    Get.toNamed(routes, arguments: arguments);
-  }
-
   getTo({required String routes, dynamic arguments}) {
     Get.to(routes, arguments: arguments);
+  }
+
+  getToName({required String routes, dynamic arguments}) {
+    Get.toNamed(routes, arguments: arguments);
   }
 
   getOffAllName({required String routes, dynamic arguments}) {
@@ -21,7 +21,4 @@ class AppRoutes {
     Get.offNamed(routes, arguments: arguments);
   }
 
-  getOff({required String routes, dynamic arguments}) {
-    Get.off(routes, arguments: arguments);
-  }
 }
