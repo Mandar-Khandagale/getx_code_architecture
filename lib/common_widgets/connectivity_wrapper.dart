@@ -1,6 +1,6 @@
 library connectivity_wrapper;
 import 'package:flutter/material.dart';
-import 'package:getx_code_architecture/comman_widgets/offline_widget.dart';
+import 'package:getx_code_architecture/common_widgets/offline_widget.dart';
 import 'package:getx_code_architecture/enum/connectivity_status.dart';
 import 'package:getx_code_architecture/services/connectivity_service.dart';
 import 'package:provider/provider.dart';

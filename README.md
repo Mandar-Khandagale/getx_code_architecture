@@ -1,16 +1,28 @@
-# getx_code_architecture
+# Code architecture and State management:
 
-getx code architecture
+The main goal behind this project is to understand code architecture in Getx.
 
-## Getting Started
+# Code skeleton of the project:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- lib
+  - base
+      - base page
+      - base widget
+  - common widget
+  - data
+      - network
+          - model
+          - utils
+  - di
+  - enum
+  - feature
+      - splash
+      - login
+           - controller
+           - repository
+           - view
+           - widgets
+        
+  - routes
+  - services
+  - utils
