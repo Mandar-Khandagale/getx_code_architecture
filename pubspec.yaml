@@ -3,7 +3,7 @@
 
 name: getx_code_architecture
 description: getx code architecture
-publish_to: 'none'
+publish_to: 'https://github.com/PanditKuldeep/Getx-Code-Architecture/'
 
 version: 1.0.0+1
 
