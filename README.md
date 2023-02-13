@@ -8,6 +8,7 @@ The main goal behind this project is to understand code architecture in Getx.
   - base
       - base page
       - base widget
+      - getx base page
   - common widget
   - data
       - network
