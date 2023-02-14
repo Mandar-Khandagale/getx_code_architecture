@@ -1,3 +1,4 @@
+import 'package:easy_internet_checker/easy_internet_checker.dart';
 import 'package:flutter/material.dart';
 import 'package:getx_code_architecture/base/base_widget.dart';
 import 'package:getx_code_architecture/utils/size_config.dart';
@@ -76,11 +77,14 @@ class ViewElement extends ComponentElement {
 
   @override
   Widget build() {
-    return BaseWidget(
-      builder: (context) {
-        //SizeConfig().init(context);
-        return widget.build(this);
-      },
+    return ConnectivityWrapper(
+      disableInteraction: true,
+      child: BaseWidget(
+        builder: (context) {
+          //SizeConfig().init(context);
+          return widget.build(this);
+        },
+      ),
     );
   }
 }

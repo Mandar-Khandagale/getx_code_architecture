@@ -23,7 +23,7 @@ dependencies:
   pretty_dio_logger: ^1.1.1
   logger: ^1.1.0
   flutter_dotenv: ^5.0.2
-  connectivity_plus: ^3.0.2
+  easy_internet_checker: ^0.0.2
   provider: ^6.0.5
   shared_preferences: ^2.0.17
   synchronized: ^3.0.1
